@@ -1,0 +1,5 @@
+,Holding cost,Stockout cost,Total cost,"Cost reduction vs. naive, same basis"
+"Naive (vs. forecast, projected)",219.57175801980472,1113.058394386703,1332.6301524065077,
+"LP-optimized (vs. forecast, projected)",527.4115757335129,0.0,527.4115757335129,60.4%
+"Naive (vs. ACTUAL demand, realized)",219.57175801980472,3220.3646363373714,3439.936394357176,
+"LP-optimized (vs. ACTUAL demand, realized)",527.4115757335129,63.420606237525924,590.8321819710388,82.8%

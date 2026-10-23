@@ -1,0 +1,4 @@
+Service level,Status,Total inventory,Holding cost,Stockout cost,Total cost,Total shortage (units)
+90%,Optimal,7945.840462730001,527.4115757335129,0.0,527.4115757335129,0.0
+95%,Infeasible,—,—,—,—,—
+99%,Infeasible,—,—,—,—,—

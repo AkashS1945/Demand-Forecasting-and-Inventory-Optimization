@@ -1,0 +1,55 @@
+<svg width="980" height="300" viewBox="0 0 980 300" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Pipeline architecture</title>
+<desc>Data flows to EDA, to forecasting (SARIMA, LightGBM, LSTM), to model selection on a 20-series panel, then down to uncertainty estimation, LP optimization, a realized backtest, and finally the dashboard.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#5C6773" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<g font-family="Helvetica, Arial, sans-serif">
+
+<rect x="60" y="40" width="200" height="70" rx="6" fill="#EEF0F2" stroke="#9AA5B1" stroke-width="1.5"/>
+<text x="160" y="65" text-anchor="middle" font-size="14" font-weight="700" fill="#37424F">Data</text>
+<text x="160" y="85" text-anchor="middle" font-size="12" fill="#5C6773">M5 sales, calendar, prices</text>
+
+<rect x="280" y="40" width="200" height="70" rx="6" fill="#EEF0F2" stroke="#9AA5B1" stroke-width="1.5"/>
+<text x="380" y="65" text-anchor="middle" font-size="14" font-weight="700" fill="#37424F">EDA</text>
+<text x="380" y="85" text-anchor="middle" font-size="12" fill="#5C6773">Decomposition, stationarity</text>
+
+<rect x="500" y="40" width="200" height="70" rx="6" fill="#E7F1FB" stroke="#4F8FC7" stroke-width="1.5"/>
+<text x="600" y="65" text-anchor="middle" font-size="14" font-weight="700" fill="#1D4E77">Forecasting</text>
+<text x="600" y="85" text-anchor="middle" font-size="12" fill="#2E6690">SARIMA, LightGBM, LSTM</text>
+
+<rect x="720" y="40" width="200" height="70" rx="6" fill="#E7F1FB" stroke="#4F8FC7" stroke-width="1.5"/>
+<text x="820" y="65" text-anchor="middle" font-size="14" font-weight="700" fill="#1D4E77">Model selection</text>
+<text x="820" y="85" text-anchor="middle" font-size="12" fill="#2E6690">WMAPE, 20-series panel</text>
+
+<rect x="60" y="190" width="200" height="70" rx="6" fill="#FDF3E3" stroke="#D9A441" stroke-width="1.5"/>
+<text x="160" y="215" text-anchor="middle" font-size="14" font-weight="700" fill="#7A5510">Uncertainty</text>
+<text x="160" y="235" text-anchor="middle" font-size="12" fill="#8C6A1E">Error spread, validation set</text>
+
+<rect x="280" y="190" width="200" height="70" rx="6" fill="#FDF3E3" stroke="#D9A441" stroke-width="1.5"/>
+<text x="380" y="215" text-anchor="middle" font-size="14" font-weight="700" fill="#7A5510">Optimization</text>
+<text x="380" y="235" text-anchor="middle" font-size="12" fill="#8C6A1E">LP allocation, service level</text>
+
+<rect x="500" y="190" width="200" height="70" rx="6" fill="#E4F5EF" stroke="#46A883" stroke-width="1.5"/>
+<text x="600" y="215" text-anchor="middle" font-size="14" font-weight="700" fill="#14513C">Backtest</text>
+<text x="600" y="235" text-anchor="middle" font-size="12" fill="#1F6B4E">Realized vs naive, 28 days</text>
+
+<rect x="720" y="190" width="200" height="70" rx="6" fill="#E4F5EF" stroke="#46A883" stroke-width="1.5"/>
+<text x="820" y="215" text-anchor="middle" font-size="14" font-weight="700" fill="#14513C">Dashboard</text>
+<text x="820" y="235" text-anchor="middle" font-size="12" fill="#1F6B4E">Forecast, optimization, decisions</text>
+
+<line x1="260" y1="75" x2="278" y2="75" stroke="#5C6773" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="480" y1="75" x2="498" y2="75" stroke="#5C6773" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="700" y1="75" x2="718" y2="75" stroke="#5C6773" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<line x1="260" y1="225" x2="278" y2="225" stroke="#5C6773" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="480" y1="225" x2="498" y2="225" stroke="#5C6773" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="700" y1="225" x2="718" y2="225" stroke="#5C6773" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<path d="M920 110 L920 145 L60 145 L60 188" fill="none" stroke="#5C6773" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+</g>
+</svg>
